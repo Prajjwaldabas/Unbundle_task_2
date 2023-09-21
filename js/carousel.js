@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Your JavaScript code here
+  
 
     const carousel = document.querySelector('.carousel');
     const prevButton = document.querySelector('.prev-button');
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const numImages = carousel.childElementCount;
     
-    const imageWidth = 40; // Assuming each image has a width of 100%
+    const imageWidth = 40; 
     
     function updateCarousel() {
         const offset = currentIndex * -imageWidth;
@@ -16,19 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
     function prevSlide() {
-        currentIndex = (currentIndex - 1 + numImages) % numImages;
+        currentIndex = (currentIndex - 1 + numImages) % (numImages-2);
         updateCarousel();
     }
     
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % numImages;
+        currentIndex = (currentIndex + 1) % (numImages-2);
         updateCarousel();
         
-        // Check if we've reached the last image and loop back to the first image
+  
         if (currentIndex === 0) {
             setTimeout(() => {
                 updateCarousel();
-            }, 500); // Add a delay for a smoother transition
+            }, 500); 
         }
     }
     

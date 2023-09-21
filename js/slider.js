@@ -4,10 +4,9 @@ const slides = document.querySelector('.slides');
         let currentIndex = 0;
 
         function updateSlider() {
-            const offset = currentIndex * -33.33; // 33.33% for each slide
+            const offset = currentIndex * -33.33;
             slides.style.transform = `translateX(${offset}%)`;
 
-            // Update active dot
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentIndex);
             });
@@ -18,10 +17,9 @@ const slides = document.querySelector('.slides');
             updateSlider();
         }
 
-        // Automatically slide on page load
         setInterval(nextSlide, 3000);
 
-        // Dot navigation
+      
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 currentIndex = index;

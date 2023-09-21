@@ -5,6 +5,11 @@
     font-family: 'Nanum Gothic', sans-serif;
     list-style: none;
     position: relative;
+    
+}
+
+body{
+  width: 100%;
 }
 
 input:focus{

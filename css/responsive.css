@@ -1,0 +1,113 @@
+
+
+/* Small screens  */
+@media (max-width: 576px) {
+   
+    #slider-section{
+        position: absolute;
+        top: 40px;
+       width: 100%;
+        height: 600px;
+      /* border: 1px solid red; */
+      }
+
+
+      .slider-content h1 {
+        font-size: 19px;
+    }
+    .slider-content p {
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+
+    #carousel-section {
+        height: auto;
+        margin-top: 36rem;
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+
+    .greyText{
+        display: none;
+    }
+    #section-1 {
+        display: flex;
+        margin-top: 7rem;
+        gap: 60px;
+        flex-direction: column-reverse !important;
+    }
+    #section-2 {
+        display: flex;
+        margin-top: 7rem;
+        gap: 60px;
+        flex-direction: column !important;
+    }
+    #section-3 {
+        display: flex;
+        margin-top: 7rem;
+        gap: 60px;
+        flex-direction: column-reverse !important;
+    }
+    #section-4 {
+        display: flex;
+        margin-top: 7rem;
+        gap: 60px;
+        flex-direction: column !important;
+        padding: 35px 0px
+    }
+
+    .Essential-right {
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+
+    .Essential-left {
+        align-items: center;
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+    .fs-12 {
+        /* word-spacing: 10px; */
+        font-size: 16px;
+    }
+
+    #plantProteinImg{
+        height: 450px;
+    }
+
+    #plantProtein-text-content {
+        align-items: center;
+        display: flex;
+        padding: 0rem;
+        height: 400px;
+        width: 100%;
+        /* border: 1px solid red; */
+         /* background-color: none !important; */
+         height: 500px;
+    }
+   .Aminoacid{
+    font-size: 23px !important;
+   }
+  
+    .fs-12 {
+        /* word-spacing: 10px; */
+        font-size: 14px;
+    }
+
+}
+
+/* Medium screens  */
+@media (min-width: 577px) and (max-width: 768px) {
+   
+}
+
+/* Large screens  */
+@media (min-width: 769px) and (max-width: 992px) {
+  
+}
+
+/* Extra-large screens */
+@media (min-width: 993px) {
+  
+}
